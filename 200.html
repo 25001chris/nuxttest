@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-n-head="%7B%22lang%22:%7B%221%22:%22en%22%7D%7D">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js" integrity="sha512-wUa0ktp10dgVVhWdRVfcUO4vHS0ryT42WOEcXjVVF2+2rcYBKTY7Yx7JCEzjWgPV+rj2EDUr8TwsoWF6IoIOPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.js" integrity="sha512-UNbeFrHORGTzMn3HTt00fvdojBYHLPxJbLChmtoyDwB6P9hX5mah3kMKm0HHNx/EvSPJt14b+SlD8xhuZ4w9Lg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js" integrity="sha512-V/C9Axb8EEL4ix79ERIJmpRd6Mp1rWVSxa2PIBCdCxqhEsfCBWp/R0xJ4U495czhcuDWrGOFYo8+QI3lJ9DK5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/1.3.1/proj4.js" integrity="sha512-HPIkVeN4JL8hrWD1Mov+imhpp5AKR8ZnWYMeKOIg13HVSIZoq3TzFbXqMiJ0Ic5r9B0a/z3+MWd/H55MM9qycw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="/ServerGate/SGSGate.ashx?F=~/scripts/Framework.js"></script>
+    
+    
+    <!-- <script type="text/javascript" src="../scripts/Base.js"></script>
+    <script type="text/javascript" src="../scripts/OperationBase.js"></script>
+    <script type="text/javascript" src="../scripts/SuperGeoUtility.js"></script>
+    <script type="text/javascript" src="../scripts/AjaxAgent.js"></script>
+    <script type="text/javascript" src="../scripts/Framework.js"></script>
+    <script type="text/javascript" src="../scripts/MapBase.js"></script>
+    <script type="text/javascript" src="../scripts/Controls.js"></script>
+    <script type="text/javascript" src="../scripts/MapLayer.js"></script>
+    <script type="text/javascript" src="../scripts/Navigate.js"></script>
+    <script type="text/javascript" src="../scripts/CachedLayer.js"></script>
+    <script type="text/javascript" src="../scripts/OpenStreetMap.js"></script>
+    <script type="text/javascript" src="../scripts/ToolControls.js"></script>
+    <script type="text/javascript" src="../scripts/Tasks.js"></script>
+    <script type="text/javascript" src="../scripts/GFX.js"></script>
+    <script type="text/javascript" src="../scripts/FX.js"></script>
+    <script type="text/javascript" src="../scripts/Compass.js"></script>
+    <script type="text/javascript" src="../scripts/Tracker.js"></script>
+    <script type="text/javascript" src="../scripts/Geometry.js"></script>
+    <script type="text/javascript" src="../scripts/Symbol.js"></script>
+    <script type="text/javascript" src="../scripts/Draw.js"></script>
+    <script type="text/javascript" src="../scripts/Overview.js"></script>
+    <script type="text/javascript" src="../scripts/Bookmark.js"></script>
+    <script type="text/javascript" src="../scripts/TemplatePicker.js"></script>
+    <script type="text/javascript" src="../scripts/Layer.js"></script>
+    <script type="text/javascript" src="../scripts/TiledLayer.js"></script>
+    <script type="text/javascript" src="../scripts/TileLayer.js"></script>
+    <script type="text/javascript" src="../scripts/DynamicLayer.js"></script>
+    <script type="text/javascript" src="../scripts/Graphic.js"></script>
+    <script type="text/javascript" src="../scripts/GraphicsLayer.js"></script>
+    <script type="text/javascript" src="../scripts/OSMLayer.js"></script>
+    <script type="text/javascript" src="../scripts/BingTiledLayer.js"></script>
+    <script type="text/javascript" src="../scripts/Infowindow.js"></script>
+    <script type="text/javascript" src="../scripts/Mercator.js"></script>
+    <script type="text/javascript" src="../scripts/CoordSys.js"></script>
+    <script type="text/javascript" src="../scripts/PrintTool.js"></script>
+    <script type="text/javascript" src="../scripts/Process.js"></script>
+    <script type="text/javascript" src="../scripts/Query.js"></script>
+    <script type="text/javascript" src="../scripts/Edit.js"></script>
+    <script type="text/javascript" src="../scripts/UndoManager.js"></script>
+    <script type="text/javascript" src="../scripts/Request.js"></script>
+    <script type="text/javascript" src="../scripts/WMSLayer.js"></script>
+    <script type="text/javascript" src="../scripts/WMTSLayer.js"></script>
+    <script type="text/javascript" src="../scripts/Google.js"></script>
+    <script type="text/javascript" src="../scripts/Base64.js"></script>
+    <script type="text/javascript" src="../scripts/Projection.js"></script>
+    <script type="text/javascript" src="../scripts/setMap.js"></script> -->
+
+    <title>農田水利灌溉管理整合雲系統</title><meta data-n-head="1" charset="utf-8"><meta data-n-head="1" name="viewport" content="width=device-width,initial-scale=1"><meta data-n-head="1" data-hid="description" name="description" content=""><meta data-n-head="1" name="format-detection" content="telephone=no"><link data-n-head="1" rel="icon" type="image/x-icon" href="/favicon.ico"><script data-n-head="1" src="scripts/Base.js" async></script><script data-n-head="1" src="scripts/OperationBase.js" async></script><script data-n-head="1" src="scripts/SuperGeoUtility.js" async></script><script data-n-head="1" src="scripts/AjaxAgent.js" async></script><script data-n-head="1" src="scripts/Framework.js" async></script><script data-n-head="1" src="scripts/MapBase.js" async></script><script data-n-head="1" src="scripts/Controls.js" async></script><script data-n-head="1" src="scripts/MapLayer.js" async></script><script data-n-head="1" src="scripts/Navigate.js" async></script><script data-n-head="1" src="scripts/CachedLayer.js" async></script><script data-n-head="1" src="scripts/OpenStreetMap.js" async></script><script data-n-head="1" src="scripts/ToolControls.js" async></script><script data-n-head="1" src="scripts/Tasks.js" async></script><script data-n-head="1" src="scripts/GFX.js" async></script><script data-n-head="1" src="scripts/FX.js" async></script><script data-n-head="1" src="scripts/Compass.js" async></script><script data-n-head="1" src="scripts/Tracker.js" async></script><script data-n-head="1" src="scripts/Geometry.js" async></script><script data-n-head="1" src="scripts/Symbol.js" async></script><script data-n-head="1" src="scripts/Draw.js" async></script><script data-n-head="1" src="scripts/Overview.js" async></script><script data-n-head="1" src="scripts/Bookmark.js" async></script><script data-n-head="1" src="scripts/TemplatePicker.js" async></script><script data-n-head="1" src="scripts/Layer.js" async></script><script data-n-head="1" src="scripts/TiledLayer.js" async></script><script data-n-head="1" src="scripts/TileLayer.js" async></script><script data-n-head="1" src="scripts/DynamicLayer.js" async></script><script data-n-head="1" src="scripts/Graphic.js" async></script><script data-n-head="1" src="scripts/GraphicsLayer.js" async></script><script data-n-head="1" src="scripts/OSMLayer.js" async></script><script data-n-head="1" src="scripts/BingTiledLayer.js" async></script><script data-n-head="1" src="scripts/Infowindow.js" async></script><script data-n-head="1" src="scripts/Mercator.js" async></script><script data-n-head="1" src="scripts/CoordSys.js" async></script><script data-n-head="1" src="scripts/PrintTool.js" async></script><script data-n-head="1" src="scripts/Process.js" async></script><script data-n-head="1" src="scripts/Query.js" async></script><script data-n-head="1" src="scripts/Edit.js" async></script><script data-n-head="1" src="scripts/UndoManager.js" async></script><script data-n-head="1" src="scripts/Request.js" async></script><script data-n-head="1" src="scripts/WMSLayer.js" async></script><script data-n-head="1" src="scripts/WMTSLayer.js" async></script><script data-n-head="1" src="scripts/Google.js" async></script><script data-n-head="1" src="scripts/Base64.js" async></script><script data-n-head="1" src="scripts/Projection.js" async></script><script data-n-head="1" src="scripts/setMap.js" async></script><base href="/IRCloud/"><link rel="preload" href="/IRCloud/_nuxt/runtime.js" as="script"><link rel="preload" href="/IRCloud/_nuxt/commons/app.js" as="script"><link rel="preload" href="/IRCloud/_nuxt/vendors/app.js" as="script"><link rel="preload" href="/IRCloud/_nuxt/app.js" as="script">
+  </head>
+  <body>
+    <div id="__nuxt"><style>#nuxt-loading{background:#fff;visibility:hidden;opacity:0;position:absolute;left:0;right:0;top:0;bottom:0;display:flex;justify-content:center;align-items:center;flex-direction:column;animation:nuxtLoadingIn 10s ease;-webkit-animation:nuxtLoadingIn 10s ease;animation-fill-mode:forwards;overflow:hidden}@keyframes nuxtLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}@-webkit-keyframes nuxtLoadingIn{0%{visibility:hidden;opacity:0}20%{visibility:visible;opacity:0}100%{visibility:visible;opacity:1}}#nuxt-loading>div,#nuxt-loading>div:after{border-radius:50%;width:5rem;height:5rem}#nuxt-loading>div{font-size:10px;position:relative;text-indent:-9999em;border:.5rem solid #f5f5f5;border-left:.5rem solid #000;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:nuxtLoading 1.1s infinite linear;animation:nuxtLoading 1.1s infinite linear}#nuxt-loading.error>div{border-left:.5rem solid #ff4500;animation-duration:5s}@-webkit-keyframes nuxtLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes nuxtLoading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}</style><script>window.addEventListener("error",function(){var e=document.getElementById("nuxt-loading");e&&(e.className+=" error")})</script><div id="nuxt-loading" aria-live="polite" role="status"><div>Loading...</div></div></div><script>window.__NUXT__={config:{_app:{basePath:"/IRCloud/",assetsPath:"/IRCloud/_nuxt/",cdnURL:null}}}</script>
+  <script src="./_nuxt/runtime.js"></script><script src="./_nuxt/commons/app.js"></script><script src="./_nuxt/vendors/app.js"></script><script src="./_nuxt/app.js"></script></body>
+</html>
